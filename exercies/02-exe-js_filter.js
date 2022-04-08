@@ -54,3 +54,15 @@ const adults = (arr) => {
 let canConsumeTwo = adults(people)
 console.log(canConsumeTwo) 
 //Answer should be ['Candice', 'Tammy']
+
+// FILTER
+
+// Challenge 1:
+
+// 1. In the given array, find the elements that start with "m" and make them capitalized.
+
+const cities = ["miami", "barcelona", "madrid", "amsterdam", "berlin", "sao paulo", "lisbon", "mexico city", "paris"];
+
+const citiesWithM = cities.filter(theCity => theCity[0] === "m")
+
+console.log(citiesWithM);

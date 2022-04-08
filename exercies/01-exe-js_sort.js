@@ -57,3 +57,33 @@ console.log(output)
   { name: 'Stuart', age: 30 },
 ];
 */
+
+// Sort the following array of objects by title value: [source-w3resource](https://www.w3resource.com/javascript-exercises/javascript-array-exercise-25.php)
+
+const library = [
+   { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254 },
+   { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264 },
+   {
+     author: 'Suzanne Collins',
+     title: 'Mockingjay: The Final Book of The Hunger Games',
+     libraryID: 3245
+   }
+ ];
+ 
+ function compareToSort(x, y) {
+   if (x.title < y.title) return -1;
+   if (x.title > y.title) return 1;
+   return 0;
+ }
+ 
+ console.log(library.slice().sort(compareToSort));
+ 
+ // [ { author: 'Suzanne Collins',
+   //   title: 'Mockingjay: The Final Book of The Hunger Games',
+   //   libraryID: 3245 },
+   // { author: 'Bill Gates',
+   //   title: 'The Road Ahead',
+   //   libraryID: 1254 },
+   // { author: 'Steve Jobs',
+   //   title: 'Walter Isaacson',
+   //   libraryID: 4264 } ]
