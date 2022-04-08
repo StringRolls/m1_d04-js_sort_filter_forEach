@@ -63,6 +63,6 @@ console.log(canConsumeTwo)
 
 const cities = ["miami", "barcelona", "madrid", "amsterdam", "berlin", "sao paulo", "lisbon", "mexico city", "paris"];
 
-const citiesWithM = cities.filter(theCity => theCity[0] === "m")
+const citiesWithM =    //your code...
 
 console.log(citiesWithM);

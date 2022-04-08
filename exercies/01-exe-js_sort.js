@@ -71,9 +71,7 @@ const library = [
  ];
  
  function compareToSort(x, y) {
-   if (x.title < y.title) return -1;
-   if (x.title > y.title) return 1;
-   return 0;
+   //your code...
  }
  
  console.log(library.slice().sort(compareToSort));
